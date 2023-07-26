@@ -21,6 +21,11 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .card-border {
+            border-radius: 8px;
+            border: 1px solid rgba(18, 18, 18, 0.10);
+        }
     </style>
 </head>
 
@@ -75,8 +80,9 @@
 
     <!-- This is Banner Section -->
     <section class="relative">
-        <div class=" p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
+        <div class="p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
             <div class="carousel w-full">
+                <!-- Slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(./images/banner1.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
@@ -84,15 +90,16 @@
                             <div>
                                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5">We supply highly quality organic products</p>
-                                <button class="btn btn-primary">Shop Now</button>
+                                <button class="btn btn-info bg-[#F85559] text-white border-0">Shop Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                        <a href="#slide4" class="btn btn-circle btn-sm border-0 bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle btn-sm border-0 bg-black text-white">❯</a>
                     </div>
                 </div>
+                <!-- Slide 2 -->
                 <div id="slide2" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(./images/banner2.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
@@ -100,15 +107,16 @@
                             <div>
                                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5">We supply highly quality organic products</p>
-                                <button class="btn btn-primary">Shop Now</button>
+                                <button class="btn btn-info bg-[#F85559] text-white border-0">Shop Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+                        <a href="#slide1" class="btn btn-circle btn-sm border-0 bg-black text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle btn-sm border-0 bg-black text-white">❯</a>
                     </div>
                 </div>
+                <!-- Slide 3 -->
                 <div id="slide3" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(./images/banner3.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
@@ -116,15 +124,16 @@
                             <div>
                                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5">We supply highly quality organic products</p>
-                                <button class="btn btn-primary">Shop Now</button>
+                                <button class="btn btn-info bg-[#F85559] text-white border-0">Shop Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
+                        <a href="#slide2" class="btn btn-circle btn-sm border-0 bg-black text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle btn-sm border-0 bg-black text-white">❯</a>
                     </div>
                 </div>
+                <!-- Slide 4 -->
                 <div id="slide4" class="carousel-item relative w-full">
                     <div class="hero" style="background-image: url(./images/banner4.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
@@ -132,13 +141,13 @@
                             <div>
                                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                                 <p class="mb-5">We supply highly quality organic products</p>
-                                <button class="btn btn-primary">Shop Now</button>
+                                <button class="btn btn-info bg-[#F85559] text-white border-0">Shop Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
+                        <a href="#slide3" class="btn btn-circle btn-sm border-0 bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle btn-sm border-0 bg-black text-white">❯</a>
                     </div>
                 </div>
             </div>
@@ -173,14 +182,17 @@
 
     <!-- This is Deal of the Day Section -->
     <section class="p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
-        <div class="flex justify-between mb-12">
+        <div class="flex flex-col lg:flex-row justify-center lg:justify-between content-center mb-12">
             <div>
-                <h3 class="text-5xl font-extrabold">Deal of the day</h3>
-                <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in
+                <h3 class="text-5xl font-extrabold text-center lg:text-left">Deal of the day</h3>
+                <p class="text-base font-medium lg:max-w-[60%] text-center lg:text-left">Contrary to popular belief, is
+                    not simply random text. It
+                    has roots in
                     a piece of classical Latin
                     literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div
+                class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center lg:justify-normal content-center">
                 <div class="flex flex-col">
                     <span class="countdown text-5xl font-extrabold">
                         <span style="--value:15;"></span>⋮
@@ -208,9 +220,9 @@
             </div>
         </div>
         <!-- Cards -->
-        <div class="flex justify-between">
+        <div class="flex flex-col lg:flex-row justify-between">
             <!-- card-1 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 card-border">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit6.png" alt="" class="rounded-xl" />
                 </figure>
@@ -231,7 +243,7 @@
                 </div>
             </div>
             <!-- card-2 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 card-border">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit7.png" alt="" class="rounded-xl" />
                 </figure>
@@ -252,7 +264,7 @@
                 </div>
             </div>
             <!-- card-3 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 card-border">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit8.png" alt="" class="rounded-xl" />
                 </figure>
@@ -273,7 +285,7 @@
                 </div>
             </div>
             <!-- card-4 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 card-border">
                 <figure class="px-10 pt-10">
                     <img src="./images/fruit9.png" alt="" class="rounded-xl" />
                 </figure>
@@ -290,6 +302,85 @@
                     </div>
                     <div class="card-actions">
                         <button class="btn btn-ghost text-[#F85559]">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-12">
+            <button class="btn btn-info bg-[#F85559] text-white border-0">Shop All</button>
+        </div>
+    </section>
+
+    <!-- This is Meet the Team Section -->
+    <section class="p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
+        <div class="hero" style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="py-14">
+                    <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                    <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <div class="flex flex-col lg:flex-row justify-center lg:justify-evenly content-center">
+                        <!-- person 1 -->
+                        <div class="text-center mb-2">
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                    <img src="./images/member1.png">
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+                            <p class="text-base font-medium">Fruits Expert</p>
+                            <div class="flex justify-center gap-2 mt-2">
+                                <img class="w-6" src="./icons/facebook.ico" alt="">
+                                <img class="w-6" src="./icons/twitter.ico" alt="">
+                                <img class="w-6" src="./icons/linkedin.ico" alt="">
+                            </div>
+                        </div>
+                        <!-- person 2 -->
+                        <div class="text-center mb-2">
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                    <img src="./images/member2.png">
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold">Safia Chowdhury</h3>
+                            <p class="text-base font-medium">Fruits Expert</p>
+                            <div class="flex justify-center gap-2 mt-2">
+                                <img class="w-6" src="./icons/facebook.ico" alt="">
+                                <img class="w-6" src="./icons/twitter.ico" alt="">
+                                <img class="w-6" src="./icons/linkedin.ico" alt="">
+                            </div>
+                        </div>
+                        <!-- person 3 -->
+                        <div class="text-center mb-2">
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                    <img src="./images/member3.png">
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold">Rokib Hossain</h3>
+                            <p class="text-base font-medium">Fruits Expert</p>
+                            <div class="flex justify-center gap-2 mt-2">
+                                <img class="w-6" src="./icons/facebook.ico" alt="">
+                                <img class="w-6" src="./icons/twitter.ico" alt="">
+                                <img class="w-6" src="./icons/linkedin.ico" alt="">
+                            </div>
+                        </div>
+                        <!-- person 4 -->
+                        <div class="text-center mb-2">
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                    <img src="./images/member4.png">
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold">Chaity</h3>
+                            <p class="text-base font-medium">Fruits Expert</p>
+                            <div class="flex justify-center gap-2 mt-2">
+                                <img class="w-6" src="./icons/facebook.ico" alt="">
+                                <img class="w-6" src="./icons/twitter.ico" alt="">
+                                <img class="w-6" src="./icons/linkedin.ico" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
