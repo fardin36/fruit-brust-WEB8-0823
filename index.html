@@ -27,7 +27,7 @@
 <body class="font-lato">
 
     <!-- This is Nav Section -->
-    <section class=" p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
+    <section class="p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
         <div class="navbar lg:w-auto bg-white md:bg-[#F85559] text-black md:text-white rounded-full justify-between">
             <!-- Menus -->
             <div class="hidden lg:flex">
@@ -74,70 +74,223 @@
     </section>
 
     <!-- This is Banner Section -->
-    <section class=" p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
-        <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
-                <div class="hero" style="background-image: url(./images/banner1.png);">
-                    <div class="hero-overlay bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content md:pt-14 md:pb-14">
-                        <div>
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5">We supply highly quality organic products</p>
-                            <button class="btn btn-primary">Shop Now</button>
+    <section class="relative">
+        <div class=" p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url(./images/banner1.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content md:pt-12 md:pb-12 lg:pb-52">
+                            <div>
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn btn-primary">Shop Now</button>
+                            </div>
                         </div>
                     </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url(./images/banner2.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content md:pt-12 md:pb-12 lg:pb-52">
+                            <div>
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn btn-primary">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url(./images/banner3.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content md:pt-12 md:pb-12 lg:pb-52">
+                            <div>
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn btn-primary">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url(./images/banner4.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content md:pt-12 md:pb-12 lg:pb-52">
+                            <div>
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn btn-primary">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <div class="hero" style="background-image: url(./images/banner2.png);">
-                    <div class="hero-overlay bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content md:pt-14 md:pb-14">
-                        <div>
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5">We supply highly quality organic products</p>
-                            <button class="btn btn-primary">Shop Now</button>
-                        </div>
-                    </div>
+        </div>
+        <!-- This is Floating Section -->
+        <div class="invisible lg:visible absolute -bottom-5 w-full">
+            <div
+                class="flex justify-between text-center bg-white rounded-lg pl-12 pr-12 pt-7 pb-7 lg:mr-32 lg:ml-32 xl:mr-72 xl:ml-72">
+                <div>
+                    <img src="./images/fruit1.png" alt="">
+                    <p>Blueberry</p>
                 </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+                <div>
+                    <img src="./images/fruit2.png" alt="">
+                    <p>Orange</p>
                 </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-                <div class="hero" style="background-image: url(./images/banner3.png);">
-                    <div class="hero-overlay bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content md:pt-14 md:pb-14">
-                        <div>
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5">We supply highly quality organic products</p>
-                            <button class="btn btn-primary">Shop Now</button>
-                        </div>
-                    </div>
+                <div>
+                    <img src="./images/fruit3.png" alt="">
+                    <p>Mango</p>
                 </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
+                <div>
+                    <img src="./images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div>
+                    <img src="./images/fruit5.png" alt="">
+                    <p>Pomegranate</p>
                 </div>
             </div>
-            <div id="slide4" class="carousel-item relative w-full">
-                <div class="hero" style="background-image: url(./images/banner4.png);">
-                    <div class="hero-overlay bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content md:pt-14 md:pb-14">
-                        <div>
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                            <p class="mb-5">We supply highly quality organic products</p>
-                            <button class="btn btn-primary">Shop Now</button>
-                        </div>
+        </div>
+    </section>
+
+    <!-- This is Deal of the Day Section -->
+    <section class="p-auto pt-12 pb-12 lg:pr-28 lg:pl-28 xl:pr-60 xl:pl-60">
+        <div class="flex justify-between mb-12">
+            <div>
+                <h3 class="text-5xl font-extrabold">Deal of the day</h3>
+                <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in
+                    a piece of classical Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                    <span class="countdown text-5xl font-extrabold">
+                        <span style="--value:15;"></span>⋮
+                    </span>
+                    days
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown text-5xl font-extrabold">
+                        <span style="--value:10;"></span>⋮
+                    </span>
+                    hours
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown text-5xl font-extrabold">
+                        <span style="--value:24;"></span>⋮
+                    </span>
+                    min
+                </div>
+                <div class="flex flex-col">
+                    <span class="countdown text-5xl font-extrabold">
+                        <span style="--value:52;"></span>
+                    </span>
+                    sec
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+        <div class="flex justify-between">
+            <!-- card-1 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit6.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                    <div class="divider"></div>
+                    <p>Apples</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-ghost text-[#F85559]">Details</button>
                     </div>
                 </div>
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            <!-- card-2 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit7.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                    <div class="divider"></div>
+                    <p>Apples</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-ghost text-[#F85559]">Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit8.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                    <div class="divider"></div>
+                    <p>Apples</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-ghost text-[#F85559]">Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card-4 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="./images/fruit9.png" alt="" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+                    <div class="divider"></div>
+                    <p>Apples</p>
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-ghost text-[#F85559]">Details</button>
+                    </div>
                 </div>
             </div>
         </div>
